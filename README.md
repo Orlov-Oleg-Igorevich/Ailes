@@ -1,2 +1,4 @@
 # Nimses
-print("hello, world")
+name: Добрин Сергей
+age: 17
+job: backend разработчик
