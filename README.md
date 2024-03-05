@@ -4,7 +4,7 @@
 ## job: fullstack разработчик
 name: Добрин Сергей
 age: 17
-job: backend разработчик
+job: backend-разработчик
 
 name: Проценко Никита
 age: 19
