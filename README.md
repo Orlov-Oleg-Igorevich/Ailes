@@ -1,4 +1,4 @@
-# Ailes
+# Ailes (the social media)
 name: Добрин Сергей
 age: 17
 job: backend разработчик
