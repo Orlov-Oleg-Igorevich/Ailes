@@ -1,12 +1,44 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href= "{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
 </head>
+<style>
+</style>
 <body>
-    <h1>Тема проекта</h1>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="News.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
 
-    <p>Описание проекта</p>
+        <right>
+            <a href="signup.html" class="gradient-button">Sign up</a>
+        </right>
+        
+      </div>
+      
+    
+    <CENTER>
+        <h1>Nimses</h1>
+    </CENTER>
+    <img align="right" border-color:
+        src="{% static 'img/oi.jpeg' %}"
+        alt=""
+        width="800"
+        height="800" />
+    <p>Жизнь слишком коротка, чтобы притворятья кем-то другим</p>
+    <p>Делись, люби, живи!</p>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Недавние обновления:</h2>
+    <ul> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li>Общайся с друзьями в чате</li>
+        <li>Обменивайся любимыми локациями</li>
+        <li>Исследуй вместе с нами</li>
+       </ul>
 </body>
 </html>
