@@ -1,24 +1,20 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href= "{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
-</head>
+{% block title %} Главная {% endblock %}
+
+
 <style>
 </style>
-<body>
+{% block body %}
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="News.html">News</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+        <a class="active" href="{% url 'main-page' %}">Home</a>
+        <a href="{% url 'News' %}">News</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'about' %}">About</a>
 
         <right>
-            <a href="signup.html" class="gradient-button">Sign up</a>
+            <a href="{% url 'signup' %}" class="gradient-button">Sign up</a>
         </right>
         
       </div>
@@ -40,5 +36,4 @@
         <li>Обменивайся любимыми локациями</li>
         <li>Исследуй вместе с нами</li>
        </ul>
-</body>
-</html>
+{% endblock %}
