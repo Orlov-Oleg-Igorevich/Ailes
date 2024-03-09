@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../../static/App/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <style>
     body {
@@ -18,12 +19,12 @@
 </style>
 <body>
     <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="News.html">News</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+        <a class="active" href="{% url 'main-page' %}">Home</a>
+        <a href="{% url 'News' %}">News</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'about' %}">About</a>
         <right>
-            <a href="signup.html" class="gradient-button">Sign up</a>
+            <a href="{% url 'signup' %}" class="gradient-button">Sign up</a>
         </right>
         
       </div>

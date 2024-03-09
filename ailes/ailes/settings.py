@@ -54,7 +54,7 @@ ROOT_URLCONF = 'ailes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["App/templates/"],
+        'DIRS': ["Social_networks/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,7 +118,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    Path.joinpath(BASE_DIR, 'App/static/App')
+    Path.joinpath(BASE_DIR, 'Social_networks/static/Social_networks')
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
