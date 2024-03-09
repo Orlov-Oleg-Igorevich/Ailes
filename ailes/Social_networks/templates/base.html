@@ -8,8 +8,17 @@
     <link href= "{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
-{% block body %}
+    <div class="topnav">
+        <a class="active" href="{% url 'main-page' %}">Home</a>
+        <a href="{% url 'News' %}">News</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'about' %}">About</a>
 
-{% endblock %}
+        <right>
+            <a href="{% url 'signup' %}" class="gradient-button">Sign up</a>
+        </right>
+
+    </div>
+{% block body %} {% endblock %}
 </body>
 </html>
